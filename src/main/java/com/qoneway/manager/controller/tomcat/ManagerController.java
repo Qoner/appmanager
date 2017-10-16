@@ -3,6 +3,7 @@ package com.qoneway.manager.controller.tomcat;
 import com.qoneway.manager.domain.base.Result;
 import com.qoneway.manager.service.tomcat.ManageService;
 import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 
@@ -10,8 +11,9 @@ import javax.annotation.Resource;
 import java.util.List;
 import java.util.Map;
 
+@CrossOrigin
 @Controller
-@RequestMapping("/manager")
+@RequestMapping("/manage")
 public class ManagerController {
 
     @Resource
